@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="view" hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" vgap="5.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" />
+    <ColumnConstraints hgrow="SOMETIMES" />
+    <ColumnConstraints hgrow="SOMETIMES" />
+      <ColumnConstraints hgrow="SOMETIMES" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints vgrow="NEVER" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="anteriorButton" mnemonicParsing="false" onAction="#onAnteriorAction" text="&lt;" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="5.0" top="5.0" />
+         </GridPane.margin>
+      </Button>
+      <Label fx:id="yearLabel" alignment="CENTER" contentDisplay="CENTER" text="año" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+      <Button fx:id="siguienteButton" alignment="TOP_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onSiguienteAction" text="&gt;" textAlignment="RIGHT" GridPane.columnIndex="3" GridPane.halignment="RIGHT">
+         <GridPane.margin>
+            <Insets right="5.0" top="5.0" />
+         </GridPane.margin>
+      </Button>
+      <GridPane id="monthView" fx:id="view1" hgap="5.0" vgap="5.0" GridPane.rowIndex="1">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="mesLabel" text="mes" GridPane.columnSpan="7" GridPane.halignment="CENTER" />
+            <Label fx:id="lunesLabel" text="L" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="martesLabel" text="M" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="miercolesLabel" text="X" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="juevesLabel" text="J" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="viernesLabel" text="V" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="sabadoLabel" text="S" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="domingoLabel" text="D" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label id="diaLabel" fx:id="dia1" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia4" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia5" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia6" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia7" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia8" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia9" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia10" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia11" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia12" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia13" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia14" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia15" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia16" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia17" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia18" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia19" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia20" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia21" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia22" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia23" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia24" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia25" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia26" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia27" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia28" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia29" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia30" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia31" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia32" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia33" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia34" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia35" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia36" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia37" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia38" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia39" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia40" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia41" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia42" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </GridPane>
+      <GridPane id="monthView" fx:id="view2" hgap="5.0" vgap="5.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="mesLabel1" text="mes" GridPane.columnSpan="7" GridPane.halignment="CENTER" />
+            <Label fx:id="lunesLabel1" text="L" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="martesLabel1" text="M" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="miercolesLabel1" text="X" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="juevesLabel1" text="J" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="viernesLabel1" text="V" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="sabadoLabel1" text="S" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="domingoLabel1" text="D" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label id="diaLabel" fx:id="dia11" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia21" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia31" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia41" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia51" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia61" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia71" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia81" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia91" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia101" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia111" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia121" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia131" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia141" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia151" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia161" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia171" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia181" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia191" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia201" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia211" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia221" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia231" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia241" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia251" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia261" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia271" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia281" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia291" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia301" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia311" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia321" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia331" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia341" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia351" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia361" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia371" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia381" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia391" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia401" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia411" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia421" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </GridPane>
+      <GridPane id="monthView" fx:id="view3" hgap="5.0" vgap="5.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="mesLabel2" text="mes" GridPane.columnSpan="7" GridPane.halignment="CENTER" />
+            <Label fx:id="lunesLabel2" text="L" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="martesLabel2" text="M" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="miercolesLabel2" text="X" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="juevesLabel2" text="J" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="viernesLabel2" text="V" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="sabadoLabel2" text="S" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="domingoLabel2" text="D" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label id="diaLabel" fx:id="dia11" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia21" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia31" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia41" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia52" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia62" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia72" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia82" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia92" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia102" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia112" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia122" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia132" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia142" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia152" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia162" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia172" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia182" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia192" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia202" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia212" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia222" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia232" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia242" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia252" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia262" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia272" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia282" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia292" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia302" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia312" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia322" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia332" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia342" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia352" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia362" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia372" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia382" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia392" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia402" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia412" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia422" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </GridPane>
+      <GridPane id="monthView" fx:id="view4" hgap="5.0" vgap="5.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="mesLabel3" text="mes" GridPane.columnSpan="7" GridPane.halignment="CENTER" />
+            <Label fx:id="lunesLabel3" text="L" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="martesLabel3" text="M" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="miercolesLabel3" text="X" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="juevesLabel3" text="J" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="viernesLabel3" text="V" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="sabadoLabel3" text="S" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="domingoLabel3" text="D" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label id="diaLabel" fx:id="dia11" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia21" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia31" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia41" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia53" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia63" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia73" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia83" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia93" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia103" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia113" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia123" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia133" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia143" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia153" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia163" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia173" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia183" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia193" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia203" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia213" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia223" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia233" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia243" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia253" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia263" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia273" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia283" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia293" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia303" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia313" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia323" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia333" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia343" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia353" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia363" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia373" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia383" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia393" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia403" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia413" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia423" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </GridPane>
+      <GridPane id="monthView" fx:id="view5" hgap="5.0" vgap="5.0" GridPane.rowIndex="2">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="mesLabel4" text="mes" GridPane.columnSpan="7" GridPane.halignment="CENTER" />
+            <Label fx:id="lunesLabel4" text="L" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="martesLabel4" text="M" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="miercolesLabel4" text="X" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="juevesLabel4" text="J" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="viernesLabel4" text="V" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="sabadoLabel4" text="S" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="domingoLabel4" text="D" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label id="diaLabel" fx:id="dia11" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia21" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia31" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia41" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia54" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia64" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia74" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia84" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia94" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia104" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia114" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia124" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia134" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia144" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia154" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia164" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia174" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia184" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia194" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia204" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia214" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia224" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia234" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia244" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia254" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia264" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia274" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia284" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia294" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia304" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia314" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia324" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia334" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia344" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia354" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia364" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia374" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia384" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia394" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia404" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia414" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia424" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </GridPane>
+      <GridPane id="monthView" fx:id="view6" hgap="5.0" vgap="5.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="mesLabel5" text="mes" GridPane.columnSpan="7" GridPane.halignment="CENTER" />
+            <Label fx:id="lunesLabel5" text="L" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="martesLabel5" text="M" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="miercolesLabel5" text="X" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="juevesLabel5" text="J" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="viernesLabel5" text="V" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="sabadoLabel5" text="S" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="domingoLabel5" text="D" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label id="diaLabel" fx:id="dia11" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia21" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia31" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia41" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia55" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia65" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia75" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia85" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia95" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia105" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia115" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia125" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia135" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia145" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia155" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia165" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia175" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia185" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia195" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia205" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia215" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia225" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia235" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia245" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia255" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia265" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia275" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia285" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia295" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia305" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia315" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia325" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia335" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia345" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia355" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia365" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia375" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia385" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia395" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia405" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia415" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia425" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </GridPane>
+      <GridPane id="monthView" fx:id="view7" hgap="5.0" vgap="5.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="mesLabel6" text="mes" GridPane.columnSpan="7" GridPane.halignment="CENTER" />
+            <Label fx:id="lunesLabel6" text="L" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="martesLabel6" text="M" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="miercolesLabel6" text="X" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="juevesLabel6" text="J" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="viernesLabel6" text="V" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="sabadoLabel6" text="S" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="domingoLabel6" text="D" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label id="diaLabel" fx:id="dia11" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia21" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia31" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia41" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia56" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia66" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia76" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia86" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia96" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia106" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia116" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia126" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia136" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia146" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia156" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia166" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia176" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia186" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia196" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia206" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia216" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia226" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia236" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia246" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia256" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia266" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia276" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia286" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia296" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia306" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia316" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia326" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia336" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia346" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia356" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia366" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia376" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia386" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia396" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia406" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia416" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia426" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </GridPane>
+      <GridPane id="monthView" fx:id="view8" hgap="5.0" vgap="5.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="mesLabel7" text="mes" GridPane.columnSpan="7" GridPane.halignment="CENTER" />
+            <Label fx:id="lunesLabel7" text="L" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="martesLabel7" text="M" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="miercolesLabel7" text="X" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="juevesLabel7" text="J" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="viernesLabel7" text="V" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="sabadoLabel7" text="S" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="domingoLabel7" text="D" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label id="diaLabel" fx:id="dia11" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia21" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia31" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia41" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia57" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia67" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia77" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia87" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia97" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia107" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia117" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia127" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia137" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia147" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia157" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia167" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia177" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia187" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia197" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia207" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia217" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia227" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia237" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia247" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia257" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia267" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia277" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia287" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia297" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia307" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia317" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia327" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia337" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia347" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia357" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia367" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia377" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia387" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia397" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia407" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia417" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia427" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </GridPane>
+      <GridPane id="monthView" fx:id="view9" hgap="5.0" vgap="5.0" GridPane.rowIndex="3">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="mesLabel8" text="mes" GridPane.columnSpan="7" GridPane.halignment="CENTER" />
+            <Label fx:id="lunesLabel8" text="L" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="martesLabel8" text="M" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="miercolesLabel8" text="X" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="juevesLabel8" text="J" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="viernesLabel8" text="V" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="sabadoLabel8" text="S" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="domingoLabel8" text="D" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label id="diaLabel" fx:id="dia11" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia21" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia31" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia41" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia58" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia68" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia78" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia88" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia98" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia108" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia118" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia128" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia138" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia148" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia158" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia168" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia178" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia188" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia198" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia208" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia218" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia228" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia238" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia248" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia258" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia268" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia278" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia288" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia298" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia308" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia318" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia328" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia338" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia348" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia358" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia368" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia378" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia388" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia398" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia408" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia418" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia428" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </GridPane>
+      <GridPane id="monthView" fx:id="view10" hgap="5.0" vgap="5.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="mesLabel9" text="mes" GridPane.columnSpan="7" GridPane.halignment="CENTER" />
+            <Label fx:id="lunesLabel9" text="L" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="martesLabel9" text="M" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="miercolesLabel9" text="X" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="juevesLabel9" text="J" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="viernesLabel9" text="V" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="sabadoLabel9" text="S" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="domingoLabel9" text="D" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label id="diaLabel" fx:id="dia11" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia21" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia31" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia41" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia59" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia69" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia79" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia89" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia99" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia109" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia119" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia129" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia139" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia149" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia159" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia169" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia179" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia189" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia199" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia209" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia219" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia229" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia239" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia249" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia259" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia269" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia279" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia289" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia299" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia309" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia319" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia329" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia339" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia349" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia359" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia369" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia379" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia389" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia399" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia409" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia419" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia429" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </GridPane>
+      <GridPane id="monthView" fx:id="view11" hgap="5.0" vgap="5.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="mesLabel10" text="mes" GridPane.columnSpan="7" GridPane.halignment="CENTER" />
+            <Label fx:id="lunesLabel10" text="L" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="martesLabel10" text="M" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="miercolesLabel10" text="X" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="juevesLabel10" text="J" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="viernesLabel10" text="V" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="sabadoLabel10" text="S" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="domingoLabel10" text="D" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label id="diaLabel" fx:id="dia11" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia21" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia31" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia41" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia510" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia610" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia710" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia810" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia910" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia1010" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia1110" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia1210" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia1310" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia1410" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia1510" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia1610" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia1710" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia1810" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia1910" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia2010" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia2110" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia2210" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia2310" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia2410" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia2510" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia2610" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia2710" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia2810" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia2910" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia3010" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia3110" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia3210" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia3310" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia3410" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia3510" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia3610" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia3710" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia3810" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia3910" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia4010" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia4110" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia4210" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </GridPane>
+      <GridPane id="monthView" fx:id="view12" hgap="5.0" vgap="5.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="mesLabel11" text="mes" GridPane.columnSpan="7" GridPane.halignment="CENTER" />
+            <Label fx:id="lunesLabel11" text="L" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="martesLabel11" text="M" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="miercolesLabel11" text="X" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="juevesLabel11" text="J" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="viernesLabel11" text="V" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="sabadoLabel11" text="S" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="domingoLabel11" text="D" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label id="diaLabel" fx:id="dia11" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia21" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia31" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia41" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia511" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia611" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia711" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Label id="diaLabel" fx:id="dia811" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia911" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia1011" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia1111" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia1211" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia1311" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia1411" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Label id="diaLabel" fx:id="dia1511" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia1611" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia1711" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia1811" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia1911" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia2011" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia2111" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Label id="diaLabel" fx:id="dia2211" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia2311" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia2411" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia2511" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia2611" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia2711" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia2811" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Label id="diaLabel" fx:id="dia2911" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia3011" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia3111" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia3211" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia3311" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia3411" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia3511" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Label id="diaLabel" fx:id="dia3611" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia3711" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia3811" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia3911" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia4011" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia4111" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Label id="diaLabel" fx:id="dia4211" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </GridPane>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>

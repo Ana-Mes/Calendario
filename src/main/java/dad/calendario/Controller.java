@@ -1,6 +1,7 @@
 package dad.calendario;
 
 import java.net.URL;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Calendar;
 import java.util.List;
@@ -162,6 +163,12 @@ public class Controller implements Initializable {
 			for (int j =0 ; j < 42; j++) {
 			
 				if(j >= posicionDia(i) && j <= diasMes(i+1)+posicionDia(i)-1) {
+					if(LocalDate.now().getDayOfMonth() == dias && LocalDate.now().getMonthValue() == i
+							&& LocalDate.now().getYear() == getYearProperty()) {
+						labelsDias.get(j).getStyleClass().add("today");
+					}else {
+						labelsDias.get(j).getStyleClass().remove("today");
+					}
 					labelsDias.get(j).setText(String.valueOf(dias));
 					dias++;
 				} else {

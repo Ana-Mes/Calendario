@@ -1,0 +1,43 @@
+.root{
+	-fx-font-family: Courier New;
+	-fx-font-size: 11pt;
+	-fx-background-color: white;
+}
+
+.button:hover {
+	-fx-effect: dropshadow( three-pass-box, rgba(92, 90, 91, 0.8), 5, 0.1, 0, 1);
+}
+
+.month{
+	-fx-font-weight: bold;
+	-fx-font-size: 13pt;
+}
+
+.year{
+	-fx-font-family: Arial;
+	-fx-font-size: 22pt;
+	-fx-font-weight: bold;
+	-fx-effect: dropshadow( three-pass-box, rgba(92, 90, 91, 0.8), 5, 0.1, 0, 1);
+	-fx-text-fill: white;
+}
+
+.weekday{
+	-fx-font-weight: bold;
+}
+
+.day{
+	-fx-font-style: italic;
+}
+
+.sunday{
+	-fx-text-fill: red;
+}
+
+.today{
+	-fx-background-color: linear-gradient(to bottom right,white,orange);
+	-fx-border-radius: 10px;
+	-fx-border-style: dashed;
+	-fx-background-radius: 10px;
+	-fx-font-weight: bold;
+	-fx-text-fill: black;
+}
